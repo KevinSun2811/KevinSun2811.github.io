@@ -24,9 +24,9 @@ author:
   avatar           : "8X6A52572.png"
   name             : "Sun, Qizhang (Kevin)"
   pronouns         : # example: "she/her"  
-  bio              : #"Short biography for the left-hand sidebar"
+  bio              : " "
   location         : "Beijing, China"
-  employer         : "Institute of Psychology, Chinese Academy of Sciences"
+  employer         : "Institute of Psychology, \n<br>Chinese Academy of Sciences"
   uri              : # URL
   email            : "sunqz@psych.ac.cn" 
 
