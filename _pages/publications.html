@@ -17,11 +17,11 @@ author_profile: true
     {% assign title_shown = false %}
     {% for post in site.publications reversed %}
       {% if post.category != category[0] %}
-<p>(#co-first author; *corresponding author)</p>
         {% continue %}
       {% endif %}
       {% unless title_shown %}
         <h2>{{ category[1].title }}</h2><hr />
+        <p>(#co-first author; *corresponding author)</p>
         {% assign title_shown = true %}
       {% endunless %}
       {% include archive-single.html %}
