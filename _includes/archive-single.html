@@ -53,11 +53,7 @@
     <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
       {% if post.collection == 'portfolio' %}
       <p> 
-          {% if post.ongoing == true %}
-          <i>{{post.startdate | date: "%Y-%B"}} - now</i><br>
-          {% elseif post.ongoing == false %}
-          <i>{{post.startdate | date: "%Y-%B"}} - {{ post.enddate | date: "%Y-%B" }}</i><br>
-          {% endif %}
+          {{post.excerpt}}<br>
           <i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{post.type}}, {{ post.venue }}<br>
           <i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}{{post.location}}
       </p>
@@ -66,11 +62,7 @@
     <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% if post.collection == 'portfolio' %}
       <p> 
-          {% if post.ongoing == true %}
-          <i>{{post.startdate | date: "%Y-%B"}} - now</i><br>
-          {% elseif post.ongoing == false %}
-          <i>{{post.startdate | date: "%Y-%B"}} - {{ post.enddate | date: "%Y-%B" }}</i><br>
-          {% endif %}
+          {{post.excerpt}}<br>
           <i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{post.type}}, {{ post.venue }}<br>
           <i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}{{post.location}}
       </p>
