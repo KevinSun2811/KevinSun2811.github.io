@@ -15,9 +15,9 @@ author_profile: true
 {% if site.publication_category %}
   {% for category in site.publication_category  %}
     {% assign title_shown = false %}
-<p>(#co-first author; *corresponding author)</p>
     {% for post in site.publications reversed %}
       {% if post.category != category[0] %}
+<p>(#co-first author; *corresponding author)</p>
         {% continue %}
       {% endif %}
       {% unless title_shown %}
