@@ -55,7 +55,7 @@
       <p> 
           {{post.excerpt}}<br>
           <i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{post.type}}, {{ post.venue }}<br>
-          <i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{post.location}}
+          <i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}{{post.location}}
       </p>
       {% endif %}
     {% elsif post.excerpt and site.read_more == 'enabled' %}
@@ -64,7 +64,7 @@
       <p> 
           {{post.excerpt}}<br>
           <i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{post.type}}, {{ post.venue }}<br>
-          <i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{post.location}}
+          <i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}{{post.location}}
       </p>
       {% endif %}
     {% endif %}
