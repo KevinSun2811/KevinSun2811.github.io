@@ -7,6 +7,9 @@
 main:
   - title: "Publications"
     url: /publications/
+    
+  - title: "Work Experienece"
+    url: /portfolio/
 
   - title: "Education"
     url: /talks/    
@@ -14,8 +17,7 @@ main:
   - title: "Teaching"
     url: /teaching/    
     
-#  - title: "Portfolio"
-#    url: /portfolio/
+
         
 #  - title: "Blog Posts"
 #    url: /year-archive/
