@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : #"Your Name / Site Title"
+title                    : "Sun, Qizhang (Kevin)"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
@@ -26,7 +26,7 @@ author:
   pronouns         : # example: "she/her"  
   bio              : " "
   location         : "Beijing, China"
-  employer         : "Institute of Psychology,\nChinese Academy of Sciences"
+  employer         : "Institute of Psychology,<br>Chinese Academy of Sciences"
   uri              : # URL
   email            : "sunqz@psych.ac.cn" 
 

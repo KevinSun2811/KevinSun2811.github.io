@@ -1,11 +1,11 @@
 ---
-title: "PhD in Communication Sciences"
+title: "phd"
 collection: talks
-type: "Talk"
-permalink: /education/phd
-venue: " Institue of Marketing and Communication Management, Università della Svizzera italiana"
-date: 2013—2017
-location: "Lugano, Switzerland"
+type: "Conference proceedings talk"
+permalink: /talks/phd
+venue: "Testing Institute of America 2014 Annual Conference"
+date: 2014-03-01
+location: "Los Angeles, CA"
 ---
 
-
+This is a description of your conference proceedings talk, note the different field in type. You can put anything in this field.
