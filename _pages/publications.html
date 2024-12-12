@@ -10,17 +10,13 @@ author_profile: true
 {% endif %}
 
 {% include base_path %}
-<p>(#co-first author; *corresponding author)</p>
 <!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
-<p>1</p>
+<p>(#co-first author; *corresponding author)</p>
   {% for category in site.publication_category  %}
-<p>2</p>
     {% assign title_shown = false %}
     {% for post in site.publications reversed %}
-<p>3</p>
       {% if post.category != category[0] %}
-<p>4</p>
         {% continue %}
       {% endif %}
       {% unless title_shown %}
