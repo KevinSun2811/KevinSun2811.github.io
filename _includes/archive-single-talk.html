@@ -42,7 +42,17 @@
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
-    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>{% endif %}
+      
+    {% if post.excerpt %}
+      <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+      {% endif %}
+      
+      <p class="page__date"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <i><time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %Y" }}</time></i></p>
+      
+      <p> 
+          <i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{post.type}}, {{ post.venue }}<br>
+          <i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}{{post.location}}
+      </p>
   </article>
 </div>
 
