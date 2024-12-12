@@ -11,8 +11,8 @@ main:
   - title: "Work Experience"
     url: /portfolio/
     
-  - title: "Teaching"
-    url: /teaching/  
+#  - title: "Teaching"
+#    url: /teaching/  
 
   - title: "Education"
     url: /talks/    
