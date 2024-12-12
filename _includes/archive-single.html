@@ -50,7 +50,12 @@
     {% endif %}
 
     {% if post.excerpt and site.read_more != 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+      {% if post.collection == 'portfolio' %}
+      <i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
+      {% endif %}
+    <p class="archive__item-excerpt" itemprop="description">
+        {{ post.excerpt | markdownify }}
+      </p>
       {% if post.collection == 'portfolio' %}
       <p> 
           <i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{post.type}}, {{ post.venue }}<br>
@@ -58,11 +63,11 @@
       </p>
       {% endif %}
     {% elsif post.excerpt and site.read_more == 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description"><p>
+    <p class="archive__item-excerpt" itemprop="description">
       {% if post.collection == 'portfolio' %}
       <i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
       {% endif %}
-      {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
+      <p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% if post.collection == 'portfolio' %}
       <p> 
           <i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{post.type}}, {{ post.venue }}<br>
