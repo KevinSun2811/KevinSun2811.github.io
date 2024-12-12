@@ -53,9 +53,11 @@
     {% if post.excerpt and site.read_more != 'enabled' %}
       {% if post.collection != 'publications' %}
     <p class="archive__item-excerpt" itemprop="description">
+<!--
         {% if post.collection == 'portfolio' %}
       <i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
       {% endif %}
+-->
         {{ post.excerpt | markdownify }}
       </p>
       {% endif %}
