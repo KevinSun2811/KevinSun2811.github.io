@@ -1,9 +1,8 @@
 ---
-title: "Beijing Institute of Technology"
-excerpt: "Department of Industrial Design"
+title: "Associate Professor (2021.05-2024.06)"
 collection: portfolio
-type: "Associate Professor"
-venue: "2021.05 - 2024.06"
+type: "Department of Industrial Design"
+venue: "Beijing Institute of Technology"
 location: "Beijing, China"
 ---
 
