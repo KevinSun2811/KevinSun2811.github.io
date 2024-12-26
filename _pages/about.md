@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Greeting!"
+title: "Greetings!"
 author_profile: true
 redirect_from: 
   - /about/
@@ -10,4 +10,4 @@ redirect_from:
 <br/>
 I am Qizhang Sun, also known as Kevin. I am a behavioural scientist working at Institute of Psychology, Chinese Academy of Sciences.
 
-I study decision-making and human-computer interaction with behavioural experiments, machine learning, LLMs and process-tracing methods (i.e., eye-tracking, mouse-tracking, aspect listing). The studies’ insights apply in AI learning algorithm, explainable AI, decision support system, product design, consumer behaviour and investment behaviour. My ongoing projects focus on both psy4ai and ai4psy.
+I study decision-making with behavioural experiments, process tracking (such as eye tracking and mouse tracking) and machine learning for predicting, assisting, and intervening individual decisions. These studies involve multiple interdisciplinary, such as psychology, information system, computer science, data science, industrial design, behavioural finance, and marketing, and apply to the fields such as decision support systems, human-computer natural interaction, large languge fine-tuned model, product design, consumer behaviour, behavioural finance, etc. 
